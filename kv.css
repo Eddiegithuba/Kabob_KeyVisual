@@ -23,61 +23,74 @@ header {
     font-weight: 600;
     line-height: 25px; }
 
-function {
-  height: 664px; }
-  function f_t {
+section#platform {
+  height: 500px; }
+  section#platform p_t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px; }
-  function f_st {
+  section#platform p_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px; }
 
-fields {
+section#function {
+  height: 664px; }
+  section#function f_t {
+    color: #3B3E49;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 75px; }
+  section#function f_st {
+    color: #3B3E49;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px; }
+
+section#fields {
   height: 300px; }
-  fields fd_t {
+  section#fields fd_t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px; }
-  fields fd_st {
+  section#fields fd_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px; }
 
-customers {
+section#customers {
   height: 664px; }
-  customers c_t {
+  section#customers c_t {
     color: #FFFFFF;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px; }
-  customers c_st {
+  section#customers c_st {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px; }
 
-maps {
+section#maps {
   height: 600px; }
-  maps m_t {
+  section#maps m_t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px; }
-  maps m_st {
+  section#maps m_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px; }
 
-download {
+section#download {
   height: 546px; }
-  download d_t {
+  section#download d_t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
