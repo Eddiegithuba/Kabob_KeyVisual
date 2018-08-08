@@ -1,0 +1,84 @@
+html, body {
+  font-family: "PingFang TC";
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+header {
+  height: 664px;
+  background-color: #3B3E49; }
+  header h_t {
+    color: #FFFFFF;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 75px; }
+  header h_st {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px; }
+
+function {
+  height: 664px; }
+  function f_t {
+    color: #3B3E49;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 75px; }
+  function f_st {
+    color: #3B3E49;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px; }
+
+fields {
+  height: 300px; }
+  fields fd_t {
+    color: #3B3E49;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 75px; }
+  fields fd_st {
+    color: #3B3E49;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px; }
+
+customers {
+  height: 664px; }
+  customers c_t {
+    color: #FFFFFF;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 75px; }
+  customers c_st {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px; }
+
+maps {
+  height: 600px; }
+  maps m_t {
+    color: #3B3E49;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 75px; }
+  maps m_st {
+    color: #3B3E49;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px; }
+
+download {
+  height: 546px; }
+  download d_t {
+    color: #3B3E49;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 75px; }
