@@ -9,6 +9,9 @@ html, body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+section {
+  position: relative; }
+
 header {
   height: 664px;
   background-color: #3B3E49; }
@@ -29,12 +32,14 @@ section#platform {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
-    line-height: 75px; }
+    line-height: 75px;
+    margin-left: 10%; }
   section#platform p_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
-    line-height: 25px; }
+    line-height: 25px;
+    margin-left: 10%; }
 
 section#function {
   height: 664px; }
@@ -42,12 +47,14 @@ section#function {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
-    line-height: 75px; }
+    line-height: 75px;
+    margin-left: 10%; }
   section#function f_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
-    line-height: 25px; }
+    line-height: 25px;
+    margin-left: 10%; }
 
 section#fields {
   height: 300px; }
@@ -55,12 +62,14 @@ section#fields {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
-    line-height: 75px; }
+    line-height: 75px;
+    margin-right: 10%; }
   section#fields fd_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
-    line-height: 25px; }
+    line-height: 25px;
+    margin-right: 10%; }
 
 section#customers {
   height: 664px; }
@@ -68,12 +77,14 @@ section#customers {
     color: #FFFFFF;
     font-size: 54px;
     font-weight: 300;
-    line-height: 75px; }
+    line-height: 75px;
+    margin-left: 10%; }
   section#customers c_st {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
-    line-height: 25px; }
+    line-height: 25px;
+    margin-left: 10%; }
 
 section#maps {
   height: 600px; }
@@ -81,12 +92,14 @@ section#maps {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
-    line-height: 75px; }
+    line-height: 75px;
+    text-align: center; }
   section#maps m_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
-    line-height: 25px; }
+    line-height: 25px;
+    text-align: center; }
 
 section#download {
   height: 546px; }
@@ -94,4 +107,5 @@ section#download {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
-    line-height: 75px; }
+    line-height: 75px;
+    text-align: center; }
