@@ -1,13 +1,15 @@
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html, body {
   font-family: "PingFang TC";
   width: 100%;
   height: 100%;
   padding: 0px;
   margin: 0px;
-  overflow-x: hidden;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  overflow-x: hidden; }
 
 section {
   position: relative; }
@@ -15,76 +17,98 @@ section {
 header {
   height: 664px;
   background-color: #3B3E49; }
-  header h_t {
+  header h_t1 {
     color: #FFFFFF;
     font-size: 54px;
     font-weight: 300;
-    line-height: 75px; }
+    line-height: 75px;
+    display: block;
+    margin-left: 8%;
+    padding-top: 130px; }
+  header h_t2 {
+    color: #FFFFFF;
+    font-size: 54px;
+    font-weight: 300;
+    line-height: 75px;
+    margin-left: 8%; }
   header h_st {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
-    line-height: 25px; }
+    line-height: 25px;
+    display: block;
+    margin-left: 8%;
+    margin-top: 30px; }
 
 section#platform {
   height: 500px; }
   section#platform p_t {
+    display: block;
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
-    margin-left: 10%; }
+    margin-left: 13%;
+    padding-top: 46px; }
   section#platform p_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
-    margin-left: 10%; }
+    margin-left: 13%; }
 
-section#function {
+section#functions {
   height: 664px; }
-  section#function f_t {
+  section#functions f_t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
-    margin-left: 10%; }
-  section#function f_st {
+    margin-left: 13%; }
+  section#functions f_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
-    margin-left: 10%; }
+    margin-left: 13%; }
 
 section#fields {
-  height: 300px; }
+  height: 400px;
+  background-color: #09A8BE; }
   section#fields fd_t {
-    color: #3B3E49;
+    color: #FFFFFF;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
-    margin-right: 10%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 80%;
+    padding-top: 46px; }
   section#fields fd_st {
-    color: #3B3E49;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
-    margin-right: 10%; }
+    margin-left: 83.5%; }
 
 section#customers {
-  height: 664px; }
+  height: 664px;
+  background-color: #3B3E49; }
   section#customers c_t {
     color: #FFFFFF;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
-    margin-left: 10%; }
+    margin-left: 13%;
+    display: block;
+    padding-top: 46px; }
   section#customers c_st {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
-    margin-left: 10%; }
+    margin-left: 13%; }
 
 section#maps {
   height: 600px; }
@@ -93,13 +117,16 @@ section#maps {
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
-    text-align: center; }
+    display: block;
+    text-align: center;
+    margin-top: 46px; }
   section#maps m_st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
-    text-align: center; }
+    text-align: center;
+    display: block; }
 
 section#download {
   height: 546px; }
@@ -108,4 +135,9 @@ section#download {
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
-    text-align: center; }
+    text-align: center;
+    display: block; }
+
+section#footer {
+  height: 300px;
+  background-color: #09A8BE; }

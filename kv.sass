@@ -20,6 +20,7 @@ $color_blue: #09A8BE
   font-weight: 300
   line-height: 75px
 
+
 @mixin st_b //黑色副標
   color: #3B3E49
   font-size: 18px
@@ -62,11 +63,15 @@ $color_blue: #09A8BE
   line-height: 18px
   text-align: center
 
-@mixin blur_hr //藍色小線
-  height: 2px
-  width: 40px
-  background-color: #70BDD4
+@mixin blue_hr //藍色小線
+  max-width: 40px
+  border: solid 2px #70BDD4
 //.........................
+*
+  position: relative
+  box-sizing: border-box
+
+
 html,body
   font-family: "PingFang TC"
   width: 100%
@@ -74,8 +79,7 @@ html,body
   padding: 0px
   margin: 0px
   overflow-x: hidden
-  position: relative
-  box-sizing: border-box
+
 
 section
   position: relative
@@ -84,63 +88,87 @@ section
 header
   height: 664px
   background-color: #3B3E49
-  h_t
+  h_t1
     +t_w
+    display: block
+    margin-left: 8%
+    padding-top: 130px
+
+  h_t2
+    +t_w
+    margin-left: 8%
 
   h_st
     +st_w
+    display: block
+    margin-left: 8%
+    margin-top: 30px
 
 section#platform
   height: 500px
+
   p_t
+    display: block
     +t_b
-    margin-left: 10%
+    margin-left: 13%
+    padding-top: 46px
 
   p_st
     +st_b
-    margin-left: 10%
+    margin-left: 13%
 
 
-section#function
+
+section#functions
   height: 664px
   f_t
     +t_b
-    margin-left: 10%
+    margin-left: 13%
 
   f_st
     +st_b
-    margin-left: 10%
+    margin-left: 13%
 
 section#fields
-  height: 300px
+  height: 400px
+  background-color: $color_blue
+
   fd_t
-    +t_b
-    margin-right: 10%
+    +t_w
+    display: flex
+    margin-left: 80%
+    padding-top: 46px
 
   fd_st
-    +st_b
-    margin-right: 10%
+    +st_w
+    margin-left: 83.5%
 
 
 section#customers
   height: 664px
+  background-color: #3B3E49
   c_t
     +t_w
-    margin-left: 10%
+    margin-left: 13%
+    display: block
+    padding-top: 46px
 
   c_st
     +st_w
-    margin-left: 10%
+    margin-left: 13%
 
 section#maps
   height: 600px
   m_t
     +t_b
+    display: block
     text-align: center
+    margin-top: 46px
 
   m_st
     +st_b
     text-align: center
+    display: block
 
 
 section#download
@@ -148,6 +176,11 @@ section#download
   d_t
     +t_b
     text-align: center
+    display: block
 
 
+
+section#footer
+  height: 300px
+  background-color: $color_blue
 
