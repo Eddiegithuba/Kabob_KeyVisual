@@ -127,11 +127,10 @@ section#platform
     width: 250px
     height: 409px
 
-
   .product
     color: $color_blue
     font-size: 14px
-    border: 2px solid #70BDD4
+    border: 2px solid #09A8BE
     border-radius: 6px
     padding: 8px
     width: 130px
@@ -210,17 +209,52 @@ section#fields
 
 
 section#customers
+  position: relative
   height: 664px
   background-color: #3B3E49
   .t
     +t_w
     margin-left: 13%
     width: 298px
-    padding-top: 46px
+    padding-top: 90px
 
   .st
     +st_w
     margin-left: 13%
+
+  li
+    position: absolute
+    height: 190px
+    width: 190px
+    border-radius: 100%
+    border: 6px solid $color_blue
+    display: inline-block
+    margin-left: 60%
+    margin: 10px
+
+  .circle2
+    position: absolute
+    height: 190px
+    width: 190px
+    border-radius: 100%
+    border: 6px solid $color_blue
+    display: inline-block
+    margin-left: 80%
+
+  .intro1 //不知為何字沒有跑出來跟無法定位
+    color: black
+    font-size: 56px
+    font-weight: 300
+    line-height: 70
+    text-align: center
+
+  .intro2
+    color: black
+    font-size: 18px
+    font-weight: 600
+    line-height: 25px
+    text-align: center
+
 
 section#maps
   height: 600px

@@ -64,7 +64,7 @@ section#platform {
   section#platform .product {
     color: #09A8BE;
     font-size: 14px;
-    border: 2px solid #70BDD4;
+    border: 2px solid #09A8BE;
     border-radius: 6px;
     padding: 8px;
     width: 130px;
@@ -145,6 +145,7 @@ section#fields {
     margin-left: 83.5%; }
 
 section#customers {
+  position: relative;
   height: 664px;
   background-color: #3B3E49; }
   section#customers .t {
@@ -154,13 +155,42 @@ section#customers {
     line-height: 75px;
     margin-left: 13%;
     width: 298px;
-    padding-top: 46px; }
+    padding-top: 90px; }
   section#customers .st {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
     margin-left: 13%; }
+  section#customers li {
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    border-radius: 100%;
+    border: 6px solid #09A8BE;
+    display: inline-block;
+    margin-left: 60%;
+    margin: 10px; }
+  section#customers .circle2 {
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    border-radius: 100%;
+    border: 6px solid #09A8BE;
+    display: inline-block;
+    margin-left: 80%; }
+  section#customers .intro1 {
+    color: black;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 70;
+    text-align: center; }
+  section#customers .intro2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center; }
 
 section#maps {
   height: 600px; }
