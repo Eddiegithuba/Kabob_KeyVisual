@@ -14,58 +14,113 @@ html, body {
 section {
   position: relative; }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px; }
+
 header {
   height: 664px;
   background-color: #3B3E49; }
-  header h_t1 {
-    color: #FFFFFF;
-    font-size: 54px;
+  header .t {
+    color: white;
+    font-size: 72px;
     font-weight: 300;
-    line-height: 75px;
-    display: block;
+    line-height: 90px;
     margin-left: 8%;
-    padding-top: 130px; }
-  header h_t2 {
-    color: #FFFFFF;
-    font-size: 54px;
-    font-weight: 300;
-    line-height: 75px;
-    margin-left: 8%; }
-  header h_st {
+    padding-top: 130px;
+    width: 432px; }
+  header .st {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
-    display: block;
     margin-left: 8%;
     margin-top: 30px; }
 
 section#platform {
   height: 500px; }
-  section#platform p_t {
-    display: block;
+  section#platform .t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
     margin-left: 13%;
     padding-top: 46px; }
-  section#platform p_st {
+  section#platform .st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
     margin-left: 13%; }
+  section#platform li {
+    background-color: white;
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 250px;
+    height: 409px; }
+  section#platform .product {
+    color: #09A8BE;
+    font-size: 14px;
+    border: 2px solid #70BDD4;
+    border-radius: 6px;
+    padding: 8px;
+    width: 130px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 32px; }
+  section#platform .pic {
+    color: #F9AE0F;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  section#platform .e_name {
+    color: #3B3E49;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center; }
+  section#platform .c_name {
+    color: #3B3E49;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center; }
+  section#platform .intro {
+    width: 210px;
+    color: #3B3E49;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 21px; }
+  section#platform .more {
+    height: 48px;
+    width: 230px;
+    border-radius: 10px;
+    background-color: #09A8BE;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 35px; }
 
 section#functions {
   height: 664px; }
-  section#functions f_t {
+  section#functions .t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
     margin-left: 13%; }
-  section#functions f_st {
+  section#functions .st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
@@ -75,17 +130,14 @@ section#functions {
 section#fields {
   height: 400px;
   background-color: #09A8BE; }
-  section#fields fd_t {
+  section#fields .t {
     color: #FFFFFF;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-left: 80%;
     padding-top: 46px; }
-  section#fields fd_st {
+  section#fields .st {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
@@ -95,15 +147,15 @@ section#fields {
 section#customers {
   height: 664px;
   background-color: #3B3E49; }
-  section#customers c_t {
+  section#customers .t {
     color: #FFFFFF;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
     margin-left: 13%;
-    display: block;
+    width: 298px;
     padding-top: 46px; }
-  section#customers c_st {
+  section#customers .st {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
@@ -112,7 +164,7 @@ section#customers {
 
 section#maps {
   height: 600px; }
-  section#maps m_t {
+  section#maps .t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
@@ -120,7 +172,7 @@ section#maps {
     display: block;
     text-align: center;
     margin-top: 46px; }
-  section#maps m_st {
+  section#maps .st {
     color: #3B3E49;
     font-size: 18px;
     font-weight: 600;
@@ -130,13 +182,12 @@ section#maps {
 
 section#download {
   height: 546px; }
-  section#download d_t {
+  section#download .t {
     color: #3B3E49;
     font-size: 54px;
     font-weight: 300;
     line-height: 75px;
-    text-align: center;
-    display: block; }
+    text-align: center; }
 
 section#footer {
   height: 300px;

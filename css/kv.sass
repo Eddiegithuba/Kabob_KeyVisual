@@ -84,48 +84,114 @@ html,body
 section
   position: relative
 
+h1,h2,h3,h4,h5,h6,p
+  margin: 0px
+
 
 header
   height: 664px
   background-color: #3B3E49
-  h_t1
-    +t_w
-    display: block
+  .t
+    color: white
+    font-size: 72px
+    font-weight: 300
+    line-height: 90px
     margin-left: 8%
     padding-top: 130px
+    width: 432px
 
-  h_t2
-    +t_w
-    margin-left: 8%
-
-  h_st
+  .st
     +st_w
-    display: block
     margin-left: 8%
     margin-top: 30px
 
 section#platform
   height: 500px
 
-  p_t
-    display: block
+  .t
     +t_b
     margin-left: 13%
     padding-top: 46px
 
-  p_st
+  .st
     +st_b
     margin-left: 13%
 
+  li
+    background-color: white
+    list-style: none
+    display: inline-block
+    margin: 10px
+    box-shadow: 0px 0px 20px rgba(black,0.1)
+    border-radius: 16px
+    width: 250px
+    height: 409px
+
+
+  .product
+    color: $color_blue
+    font-size: 14px
+    border: 2px solid #70BDD4
+    border-radius: 6px
+    padding: 8px
+    width: 130px
+    text-align: center
+    margin: 0 auto
+    margin-top: 32px
+
+  .pic
+    color: #F9AE0F
+    font-size: 20px
+    text-align: center
+    margin-top: 30px
+    margin-bottom: 30px
+
+  .e_name
+    color: #3B3E49
+    font-size: 32px
+    font-weight: 600
+    line-height: 40px
+    text-align: center
+
+  .c_name
+    color: #3B3E49
+    font-size: 18px
+    font-weight: 600
+    line-height: 25px
+    text-align: center
+
+  .intro
+    width: 210px
+    color: #3B3E49
+    font-size: 13px
+    font-weight: 600
+    line-height: 18px
+    text-align: center
+    margin: 0 auto
+    margin-top: 21px
+
+  .more
+    height: 48px
+    width: 230px
+    border-radius: 10px
+    background-color: #09A8BE
+    color: white
+    font-size: 13px
+    font-weight: 600
+    line-height: 18px
+    text-align: center
+    padding: 15px
+    margin: 0 auto
+    margin-top: 35px
 
 
 section#functions
   height: 664px
-  f_t
+  .t
     +t_b
     margin-left: 13%
 
-  f_st
+  .st
     +st_b
     margin-left: 13%
 
@@ -133,13 +199,12 @@ section#fields
   height: 400px
   background-color: $color_blue
 
-  fd_t
+  .t
     +t_w
-    display: flex
     margin-left: 80%
     padding-top: 46px
 
-  fd_st
+  .st
     +st_w
     margin-left: 83.5%
 
@@ -147,25 +212,25 @@ section#fields
 section#customers
   height: 664px
   background-color: #3B3E49
-  c_t
+  .t
     +t_w
     margin-left: 13%
-    display: block
+    width: 298px
     padding-top: 46px
 
-  c_st
+  .st
     +st_w
     margin-left: 13%
 
 section#maps
   height: 600px
-  m_t
+  .t
     +t_b
     display: block
     text-align: center
     margin-top: 46px
 
-  m_st
+  .st
     +st_b
     text-align: center
     display: block
@@ -173,11 +238,9 @@ section#maps
 
 section#download
   height: 546px
-  d_t
+  .t
     +t_b
     text-align: center
-    display: block
-
 
 
 section#footer
