@@ -1,6 +1,7 @@
 //顏色定義
 $color_dark: #3B3E49
 $color_blue: #09A8BE
+$color_light_blue: #70BDD4
 
 
 //.........................
@@ -19,7 +20,6 @@ $color_blue: #09A8BE
   font-size: 54px
   font-weight: 300
   line-height: 75px
-
 
 @mixin st_b //黑色副標
   color: #3B3E49
@@ -70,6 +70,7 @@ $color_blue: #09A8BE
 *
   position: relative
   box-sizing: border-box
+  list-style: none
 
 
 html,body
@@ -80,13 +81,12 @@ html,body
   margin: 0px
   overflow-x: hidden
 
-
 section
   position: relative
 
 h1,h2,h3,h4,h5,h6,p
   margin: 0px
-
+//.........................
 
 header
   height: 664px
@@ -105,8 +105,15 @@ header
     margin-left: 8%
     margin-top: 30px
 
+  .icon_service
+    height: 499px
+    position: absolute
+    margin-left: 60%
+    top: 60px
+
+
 section#platform
-  height: 500px
+  height: 664px
 
   .t
     +t_b
@@ -118,14 +125,18 @@ section#platform
     margin-left: 13%
 
   li
-    background-color: white
-    list-style: none
     display: inline-block
-    margin: 10px
+
+
+  .card
+    background-color: white
+    display: inline-block
+    margin-left: 20px
     box-shadow: 0px 0px 20px rgba(black,0.1)
     border-radius: 16px
     width: 250px
     height: 409px
+    margin-top: 40px
 
   .product
     color: $color_blue
@@ -138,12 +149,10 @@ section#platform
     margin: 0 auto
     margin-top: 32px
 
-  .pic
-    color: #F9AE0F
-    font-size: 20px
-    text-align: center
-    margin-top: 30px
-    margin-bottom: 30px
+  .icon_service
+    height: 120px
+    display: block
+    margin: auto
 
   .e_name
     color: #3B3E49
@@ -173,7 +182,6 @@ section#platform
     height: 48px
     width: 230px
     border-radius: 10px
-    background-color: #09A8BE
     color: white
     font-size: 13px
     font-weight: 600
@@ -183,17 +191,82 @@ section#platform
     margin: 0 auto
     margin-top: 35px
 
+  .more1
+    background-color: #09A8BE
 
+  .more2
+    background-color: #F9AE0F
+
+  .more3
+    background-color: #0F2596
+    margin-top: 17px
+
+  .more4
+    background-color: #FFDA00
+
+//.........................
 section#functions
   height: 664px
   .t
     +t_b
     margin-left: 13%
+    margin-top: 90px
 
   .st
     +st_b
     margin-left: 13%
+    width: 252px
 
+  .icon_service
+    height: 450px
+
+  h2
+    color: #3B3E49
+    font-size: 18px
+    font-weight: 600
+    line-height: 25px
+
+  h3
+    color: #3B3E49
+    width: 160px
+    font-size: 13px
+    font-weight: 600
+    line-height: 18px
+    margin-top: 10px
+
+  .li1
+    position: absolute
+    margin-left: 50%
+    top: 20px
+
+  .li2
+    position: absolute
+    margin-left: 70%
+    top: 20px
+
+  .mt
+    margin-top: 47px
+
+  .f7
+    margin-top: 65px
+
+  .icon_service1
+    height: 70px
+    width: 70px
+
+  .li3
+    position: absolute
+    margin-left: 45%
+    top: 20px
+
+
+  .li4
+    position: absolute
+    margin-left: 65%
+    top: 20px
+
+
+//.........................
 section#fields
   height: 400px
   background-color: $color_blue
@@ -207,7 +280,7 @@ section#fields
     +st_w
     margin-left: 83.5%
 
-
+//.........................
 section#customers
   position: relative
   height: 664px
@@ -222,15 +295,15 @@ section#customers
     +st_w
     margin-left: 13%
 
-  li
+  .circle1
     position: absolute
     height: 190px
     width: 190px
     border-radius: 100%
     border: 6px solid $color_blue
     display: inline-block
-    margin-left: 60%
-    margin: 10px
+    margin-left: 63%
+    top: 90px
 
   .circle2
     position: absolute
@@ -240,13 +313,16 @@ section#customers
     border: 6px solid $color_blue
     display: inline-block
     margin-left: 80%
+    top: 90px
 
-  .intro1 //不知為何字沒有跑出來跟無法定位
+  .intro1
     color: black
     font-size: 56px
     font-weight: 300
-    line-height: 70
+    line-height: 70px
     text-align: center
+    color: white
+    margin-top: 40px
 
   .intro2
     color: black
@@ -254,8 +330,9 @@ section#customers
     font-weight: 600
     line-height: 25px
     text-align: center
+    color: white
 
-
+//.........................
 section#maps
   height: 600px
   .t
@@ -269,15 +346,51 @@ section#maps
     text-align: center
     display: block
 
-
+  .icon_service
+    +ab_center
+    margin-top: 50px
+    height: 327px
+//.........................
 section#download
   height: 546px
   .t
     +t_b
     text-align: center
 
+  .card
+    height: 280px
+    width: 190px
+    border-radius: 16px
+    background-color: #FFFFFF
+    box-shadow: 0 2px 30px 0 rgba(0,0,0,0.1)
+    display: inline-block
+    margin-top: 46px
+    margin-left: 30px
 
+
+  .icon_service
+    height: 140px
+    display: block
+    margin: 0 auto
+    margin-top: 15px
+
+  h1
+    color: #4A616F
+    font-size: 24px
+    font-weight: 600
+    line-height: 31px
+    text-align: center
+
+  h2
+    color: #A4B0B7
+    font-size: 14px
+    line-height: 18px
+    text-align: center
+
+
+
+//.........................
 section#footer
-  height: 300px
-  background-color: $color_blue
+  height: 170px
+  background-color: $color_light_blue
 
