@@ -5,32 +5,39 @@ head
   title kabob_KeyViual
 
   meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=0')
-  link(rel="stylesheet", href="/src/css/reset.css")
-  link(rel='stylesheet', href="/src/css/bootstrap-grid.css")
-  link(rel="stylesheet", href="/src/css/kv.css")
+  link(rel="stylesheet", href="css/reset.css")
+  link(rel='stylesheet', href="css/bootstrap-grid.css")
+  link(rel='stylesheet', href="css/bootstrap.css")
+  link(rel="stylesheet", href="css/style.css")
 
 
 body
-  navbar.navbar.navbar-default.navbar-fixed-top.navbar-top
-    .container
-      .navbar-header
-        a.navbar-brand Lookr
-      .nav.navbar-nav.navbar-right
-        li
-          a 新聞文
-        li
-          a 產品
-        li
-          a 方案
-        li
-          a 開啟平台
-        li
-          a 註冊
-        li
-          a 登入
 
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+  script(src='https://cdn.rawgit.com/VPenkov/okayNav/master/app/js/jquery.okayNav.js')
 
-  header
+  script(src='js/index.js')
+
+  nav#nav-main.okayNav(role='navigation')
+    a.site-logo(href='#') Logo
+
+    ul
+      li
+        a(href='#') Home
+      li
+        a(href='#') Shop
+      li
+        a(href='#') Blog
+      li
+        a(href='#') Services
+      li
+        a(href='#') Contacts
+      li
+        a(href='#') About us
+      li
+        a(href='#') Testimonials
+
+  header#header_index
     h1.t 新零售內容管理賦能平台
     br
     p.st 重新定義連鎖門店管理
@@ -191,6 +198,10 @@ body
         h2 Android
 
   section#footer
+
+
+
+
 
 
 
