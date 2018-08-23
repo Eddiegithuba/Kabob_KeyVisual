@@ -274,12 +274,12 @@ section#platform
   .card
     background-color: white
     display: inline-block
-    box-shadow: 0px 0px 20px rgba(black,0.1)
+    box-shadow: 0px 0px 20px rgba(black, 0.1)
     border-radius: 16px
-    width: 250px
-    height: 409px
-    margin-top: 40px
-    margin-left: 20px
+    padding: 24px
+    @media (max-width: 1200px)
+      padding: 16px
+      min-height: 380px
 
   .product
     color: $color_blue
@@ -290,12 +290,13 @@ section#platform
     width: 130px
     text-align: center
     margin: 0 auto
-    margin-top: 32px
 
   .icon_service
     height: 120px
     display: block
     margin: auto
+    @media (max-width: 1200px)
+      height: 100px
 
   .e_name
     color: #3B3E49
@@ -303,6 +304,8 @@ section#platform
     font-weight: 600
     line-height: 40px
     text-align: center
+    @media (max-width: 1200px)
+      font-size: 24px
 
   .c_name
     color: #3B3E49
@@ -310,9 +313,10 @@ section#platform
     font-weight: 600
     line-height: 25px
     text-align: center
+    @media (max-width: 1200px)
+      font-size: 16px
 
   .intro
-    width: 210px
     color: #3B3E49
     font-size: 13px
     font-weight: 600
@@ -322,17 +326,21 @@ section#platform
     margin-top: 21px
 
   .more
-    height: 48px
-    width: 230px
-    border-radius: 10px
     color: white
     font-size: 13px
     font-weight: 600
     line-height: 18px
     text-align: center
-    padding: 15px
+    position: relative
+    bottom: 0
+    height: 48px
+    border-radius: 10px
+    padding: 15px 30px
     margin: 0 auto
-    margin-top: 35px
+    margin-top: 24px
+    @media (max-width: 1200px)
+      margin-top: 16px
+      width: 180px
 
   .more1
     background-color: #09A8BE
