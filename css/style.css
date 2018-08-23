@@ -282,6 +282,7 @@ section#platform {
     background-color: #FFDA00; }
 
 section#functions {
+  margin-top: 70px;
   height: 664px; }
   section#functions .t {
     color: #3B3E49;
@@ -311,22 +312,14 @@ section#functions {
     font-weight: 600;
     line-height: 18px;
     margin-top: 10px; }
-  section#functions .li1 {
-    top: 20px; }
-  section#functions .li2 {
-    top: 20px; }
-  section#functions .li3 {
-    top: 20px; }
-  section#functions .li4 {
-    top: 20px; }
-  section#functions .mt {
-    margin-top: 47px; }
-  section#functions .f7 {
-    margin-top: 65px; }
   section#functions .icon_service1 {
-    width: 50%; }
+    width: 60%; }
   section#functions .le {
     margin-left: 30px; }
+  section#functions .mt {
+    margin-top: 50px; }
+  section#functions .ml {
+    float: right; }
 
 section#fields {
   height: 400px;
@@ -364,22 +357,18 @@ section#customers {
     line-height: 25px;
     margin-left: 4%; }
   section#customers .circle1 {
-    position: absolute;
     height: 190px;
     width: 190px;
     border-radius: 100%;
     border: 6px solid #09A8BE;
     display: inline-block;
-    margin-left: 63%;
     top: 90px; }
   section#customers .circle2 {
-    position: absolute;
     height: 190px;
     width: 190px;
     border-radius: 100%;
     border: 6px solid #09A8BE;
     display: inline-block;
-    margin-left: 80%;
     top: 90px; }
   section#customers .intro1 {
     color: black;
@@ -396,6 +385,10 @@ section#customers {
     line-height: 25px;
     text-align: center;
     color: white; }
+  section#customers .mt {
+    margin-top: 100px; }
+  section#customers .icon_service {
+    height: 50%; }
 
 section#maps {
   height: 600px; }
@@ -423,6 +416,21 @@ section#maps {
     transform: translate(-50%, -50%);
     margin-top: 50px;
     height: 50%; }
+  section#maps .btn {
+    height: 28px;
+    border-radius: 16px;
+    background-color: #70BDD4;
+    color: white;
+    font-size: 14px;
+    font-weight: 600; }
+  section#maps .china {
+    width: 65px; }
+  section#maps .singapore {
+    width: 91px; }
+  section#maps .japan {
+    width: 68px; }
+  section#maps .taiwan {
+    width: 74px; }
 
 section#download {
   height: 546px;
