@@ -177,7 +177,10 @@ nav {
 
 header {
   height: 664px;
-  background-color: #3B3E49; }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#21232A), to(#3B3E49));
+  background-image: -webkit-linear-gradient(#21232A, #3B3E49);
+  background-image: -o-linear-gradient(#21232A, #3B3E49);
+  background-image: linear-gradient(#21232A, #3B3E49); }
   header .t {
     color: white;
     font-size: 72px;
@@ -282,7 +285,7 @@ section#platform {
     background-color: #FFDA00; }
 
 section#functions {
-  margin-top: 70px;
+  padding-top: 60px;
   height: 664px; }
   section#functions .t {
     color: #3B3E49;
@@ -318,8 +321,8 @@ section#functions {
     margin-left: 30px; }
   section#functions .mt {
     margin-top: 50px; }
-  section#functions .ml {
-    float: right; }
+  section#functions .wl3 {
+    height: 36px; }
 
 section#fields {
   height: 400px;
@@ -341,7 +344,10 @@ section#fields {
 section#customers {
   position: relative;
   height: 664px;
-  background-color: #3B3E49; }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#21232A), to(#3B3E49));
+  background-image: -webkit-linear-gradient(#21232A, #3B3E49);
+  background-image: -o-linear-gradient(#21232A, #3B3E49);
+  background-image: linear-gradient(#21232A, #3B3E49); }
   section#customers .t {
     color: #FFFFFF;
     font-size: 54px;
@@ -422,7 +428,8 @@ section#maps {
     background-color: #70BDD4;
     color: white;
     font-size: 14px;
-    font-weight: 600; }
+    font-weight: 600;
+    line-height: 18px; }
   section#maps .china {
     width: 65px; }
   section#maps .singapore {
