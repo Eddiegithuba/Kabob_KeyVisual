@@ -3,6 +3,12 @@ $color_dark: #3B3E49
 $color_blue: #09A8BE
 $color_light_blue: #70BDD4
 
+// 字體定義
+$desktop_title: 54px
+$desktop_sub_title: 18px
+
+$mobile_title: 32px
+$mobile_sub_title: 16px
 
 //.........................
 @mixin ab_center
@@ -17,25 +23,25 @@ $color_light_blue: #70BDD4
 
 @mixin t_b //黑色主標
   color: #3B3E49
-  font-size: 54px
+  font-size: $desktop_title
   font-weight: 300
   line-height: 75px
 
 @mixin st_b //黑色副標
   color: #3B3E49
-  font-size: 18px
+  font-size: $desktop_sub_title
   font-weight: 600
   line-height: 25px
 
 @mixin t_w //白色主標
   color: #FFFFFF
-  font-size: 54px
+  font-size: $desktop_title
   font-weight: 300
   line-height: 75px
 
 @mixin st_w //白色副標
   color: #FFFFFF
-  font-size: 18px
+  font-size: $desktop_sub_title
   font-weight: 600
   line-height: 25px
 
@@ -231,7 +237,6 @@ nav
 .okayNav__menu-toggle.icon--active span
   background: #546edb
 
-
 // .........................
 header
 
@@ -246,15 +251,13 @@ header
     padding-top: 130px
     width: 432px
 
-
   .st
     +st_w
     margin-left: 8%
     margin-top: 30px
 
-  .icon_service
-    height: 150%
-    position: absolute
+  .header_icon
+    width: 80%
     margin-left: 40%
     top: 60px
 
@@ -277,8 +280,10 @@ section#platform
     box-shadow: 0px 0px 20px rgba(black, 0.1)
     border-radius: 16px
     padding: 24px
-    @media (max-width: 1200px)
-      padding: 16px
+    margin-top: 30px
+    @media (max-width: 1500px)
+      padding-top: 32px
+      padding-bottom: 15px
       min-height: 380px
 
   .product
@@ -291,7 +296,7 @@ section#platform
     text-align: center
     margin: 0 auto
 
-  .icon_service
+  .platform_icon
     height: 120px
     display: block
     margin: auto
@@ -324,6 +329,7 @@ section#platform
     text-align: center
     margin: 0 auto
     margin-top: 21px
+    height: 54px
 
   .more
     color: white
@@ -350,7 +356,6 @@ section#platform
 
   .more3
     background-color: #0F2596
-    margin-top: 17px
 
   .more4
     background-color: #FFDA00
@@ -415,7 +420,6 @@ section#fields
 
 //.........................
 section#customers
-  position: relative
   height: 664px
   background-image: linear-gradient(#21232A, #3B3E49)
 
@@ -465,8 +469,9 @@ section#customers
   .mt
     margin-top: 100px
 
+
   .icon_service
-    height: 50%
+    height: 0%
 
 
 
@@ -550,9 +555,119 @@ section#download
     text-align: center
 
 
-
 //.........................
 section#footer
   height: 170px
   background-color: $color_light_blue
+
+// .........................
+@media (max-width: 600px)
+
+  header#header_index
+    height: 600px
+
+    .header_icon
+      margin-left: 20%
+
+
+
+
+    .t,.st
+      text-align: center
+      margin-left: 0px
+
+    .t
+      font-size: 36px
+      width: 262px
+      margin: auto
+      line-height: 45px
+
+  section#platform
+    height: 1750px
+
+    .t,.st
+      margin-left: 8%
+
+    .t
+      font-size: $mobile_title
+      width: 225px
+      line-height: 45px
+
+    .st
+      font-size: $mobile_sub_title
+
+    .card
+      margin: auto
+      display: block
+      margin-top: 15px
+      width: 260px
+
+
+  section#functions
+    height: 2200px
+
+    .t,.st
+      margin-left: 8%
+
+    .t
+      font-size: $mobile_title
+      width: 225px
+      line-height: 45px
+
+    .st
+      font-size: $mobile_sub_title
+
+
+    .icon_service1
+      width: 30%
+
+  section#fields
+    .t
+      font-size: $mobile_title
+      margin-left: 60%
+
+    .st
+      font-size: $mobile_sub_title
+      margin-left: 45%
+
+
+  section#customers
+    height: 800px
+
+    .t,.st
+      margin-left: 8%
+
+    .t
+      font-size: $mobile_title
+      width: 133px
+      line-height: 45px
+
+
+    .st
+      font-size: $mobile_sub_title
+
+    .circle1,.circle2
+      display: block
+      margin: auto
+
+    .circle2
+      margin-top: 30px
+
+  section#maps
+    .t
+      font-size: $mobile_title
+
+    .st
+      font-size: $mobile_sub_title
+
+  section#download
+    height: 1500px
+
+    .t
+      font-size: $mobile_title
+
+
+
+
+
 
