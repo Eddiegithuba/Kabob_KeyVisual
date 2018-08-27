@@ -577,4 +577,5 @@ section#footer {
   section#maps .st {
     font-size: 16px; }
   section#download {
-    display: none; } }
+    display: hidden;
+    opacity: 0; } }
