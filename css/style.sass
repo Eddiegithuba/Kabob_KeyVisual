@@ -390,7 +390,7 @@ section#functions
     margin-top: 10px
 
   .icon_service1
-    width: 70px
+    width: 80%
     @media (max-width: 1200px)
       width: 60px
 
@@ -471,7 +471,8 @@ section#customers
 
 
   .icon_service
-    height: 0%
+    display: none
+
 
 
 
@@ -489,10 +490,13 @@ section#maps
     text-align: center
     display: block
 
+  .img_height
+    height: 326px
+
   .icon_service
     +ab_center
     margin-top: 50px
-    height: 50%
+    height: 100%
 
   .btn
     height: 28px
@@ -555,22 +559,31 @@ section#download
     text-align: center
 
 
-//.........................
+// .........................
 section#footer
   height: 170px
   background-color: $color_light_blue
 
-// .........................
-@media (max-width: 600px)
+
+// 以下為中尺寸端畫面
+@media (max-width: 768px)
+  section#platform
+    .md_width
+      width: 316px
+
+
+
+
+
+
+// 以下為手機端畫面
+@media (max-width: 576px)
 
   header#header_index
     height: 600px
 
     .header_icon
       margin-left: 20%
-
-
-
 
     .t,.st
       text-align: center
@@ -602,6 +615,9 @@ section#footer
       margin-top: 15px
       width: 260px
 
+    .md_width
+      width: 210px
+
 
   section#functions
     height: 2200px
@@ -617,9 +633,10 @@ section#footer
     .st
       font-size: $mobile_sub_title
 
-
     .icon_service1
       width: 30%
+
+
 
   section#fields
     .t
@@ -642,7 +659,6 @@ section#footer
       width: 133px
       line-height: 45px
 
-
     .st
       font-size: $mobile_sub_title
 
@@ -661,10 +677,10 @@ section#footer
       font-size: $mobile_sub_title
 
   section#download
-    height: 1500px
+    display: none
 
-    .t
-      font-size: $mobile_title
+
+
 
 
 
