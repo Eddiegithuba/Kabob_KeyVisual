@@ -17,21 +17,19 @@ $mobile_sub_title: 16px
   top: 50%
   transform: translate(-50%,-50%)
 
-@mixin size($w,$h)
-  width: $w
-  height: $h
-
 @mixin t_b //黑色主標
   color: #3B3E49
   font-size: $desktop_title
   font-weight: 300
   line-height: 75px
+  margin-left: -30px
 
 @mixin st_b //黑色副標
   color: #3B3E49
   font-size: $desktop_sub_title
   font-weight: 600
   line-height: 25px
+  margin-left: -30px
 
 @mixin t_w //白色主標
   color: #FFFFFF
@@ -70,8 +68,10 @@ $mobile_sub_title: 16px
   text-align: center
 
 @mixin blue_hr //藍色小線
-  max-width: 40px
-  border: solid 2px #70BDD4
+  width: 40px
+  border: solid 1px $color_blue
+  margin-top: 40px
+
 //.........................
 *
   position: relative
@@ -239,39 +239,37 @@ nav
 
 // .........................
 header
-
-  height: 664px
   background-image: linear-gradient(#21232A, #3B3E49)
+  padding-bottom: 140px
+
   .t
-    color: white
     font-size: 72px
     font-weight: 300
     line-height: 90px
-    margin-left: 8%
-    padding-top: 130px
+    padding-top: 65%
     width: 432px
+    color: white
 
   .st
     +st_w
-    margin-left: 8%
     margin-top: 30px
 
   .header_icon
-    width: 80%
-    margin-left: 40%
-    top: 60px
-
+    width: 85%
+    margin-left: 35%
+    top: 120px
 
 section#platform
+  margin-top: 46px
 
   .t
     +t_b
-    margin-left: 4%
-    padding-top: 46px
 
   .st
     +st_b
-    margin-left: 4%
+
+  .b_hr
+    +blue_hr
 
   .card
     background-color: white
@@ -362,6 +360,8 @@ section#platform
 //.........................
 section#functions
   padding-top: 60px
+  margin-top: 60px
+
   .t
     +t_b
     margin-left: 12%
@@ -371,9 +371,13 @@ section#functions
     margin-left: 12%
     width: 252px
 
-  .icon_service
+  .b_hr
+    +blue_hr
+
+
+  .functions_icon
     height: 450px
-    margin-left: -50%
+    margin-left: -60%
 
   h2
     color: #3B3E49
@@ -389,12 +393,12 @@ section#functions
     line-height: 18px
     margin-top: 10px
 
-  .icon_service1
+  .function_intro
     width: 80%
     @media (max-width: 1200px)
       width: 60px
 
-  .le
+  .left_move
     margin-left: 30px
 
   .mt
@@ -420,18 +424,22 @@ section#fields
 
 //.........................
 section#customers
-  height: 664px
   background-image: linear-gradient(#21232A, #3B3E49)
+  padding-top: 90px
 
   .t
     +t_w
-    margin-left: 4%
+    margin-left: 10%
     width: 298px
-    padding-top: 90px
 
   .st
     +st_w
-    margin-left: 4%
+    margin-left: 10%
+
+  .w_hr
+    width: 40px
+    border: solid 1px white
+    margin-top: 40px
 
   .circle1
     height: 190px
@@ -439,7 +447,6 @@ section#customers
     border-radius: 100%
     border: 6px solid $color_blue
     display: inline-block
-    top: 90px
 
   .circle2
     height: 190px
@@ -447,7 +454,6 @@ section#customers
     border-radius: 100%
     border: 6px solid $color_blue
     display: inline-block
-    top: 90px
 
   .intro1
     color: black
@@ -469,16 +475,23 @@ section#customers
   .mt
     margin-top: 100px
 
-
   .icon_service
-    display: none
+    height: 190px
+    margin-top: 110px
+    margin-bottom: 100px
+    padding-left: 20px
 
+  .l1
+    margin-left: -270px
 
+  .aaa
+    margin-right: -90px
+    margin-left: -90px
+    display: inline-block
 
 
 //.........................
 section#maps
-  height: 600px
   .t
     +t_b
     display: block
@@ -507,23 +520,9 @@ section#maps
     font-weight: 600
     line-height: 18px
 
-  .china
-    width: 65px
-
-  .singapore
-    width: 91px
-
-  .japan
-    width: 68px
-
-  .taiwan
-    width: 74px
-
-
-
 //.........................
 section#download
-  height: 546px
+  margin-top: 100px
   text-align: center
 
   .t
@@ -561,8 +560,49 @@ section#download
 
 // .........................
 section#footer
-  height: 170px
+  margin-top: 100px
+  height: 180px
   background-color: $color_light_blue
+
+  h1
+    display: inline-block
+    font-size: 14px
+    color: white
+    padding-left: 30px
+
+  h2
+    font-size: 12px
+    color: white
+
+  .mt1
+    margin-top: 36px
+
+  .mt2
+    margin-top: 25px
+
+  .mt3
+    margin-top: 20px
+
+  .mt4
+    margin-top: -20px
+
+  .le1
+    padding-left: 1020px
+
+  .le2
+    padding-left: 1090px
+
+  .logo
+    height: 20px
+    margin-left: 45px
+
+  .phone
+    height: 35px
+    margin-left: 1270px
+
+  .mail
+    height: 35px
+    margin-left: 10px
 
 
 // 以下為中尺寸端畫面
@@ -570,9 +610,6 @@ section#footer
   section#platform
     .md_width
       width: 316px
-
-
-
 
 
 
@@ -584,19 +621,26 @@ section#footer
 
     .header_icon
       margin-left: 20%
+      top: 50px
 
     .t,.st
       text-align: center
       margin-left: 0px
 
     .t
-      font-size: 36px
-      width: 262px
+      font-size: 38px
+      width: 230px
       margin: auto
       line-height: 45px
+      font-weight: 400
+      padding-top: 35%
+
+    .st
+      font-size: 14px
 
   section#platform
     height: 1750px
+    margin-top: 0px
 
     .t,.st
       margin-left: 8%
@@ -608,6 +652,10 @@ section#footer
 
     .st
       font-size: $mobile_sub_title
+
+    .b_hr
+      right: 120px
+
 
     .card
       margin: auto
@@ -621,9 +669,10 @@ section#footer
 
   section#functions
     height: 2200px
+    margin-top: 30px
 
     .t,.st
-      margin-left: 8%
+      margin-left: 10%
 
     .t
       font-size: $mobile_title
@@ -633,9 +682,11 @@ section#footer
     .st
       font-size: $mobile_sub_title
 
+    .b_hr
+      right: 120px
+
     .icon_service1
       width: 30%
-
 
 
   section#fields
@@ -645,29 +696,40 @@ section#footer
 
     .st
       font-size: $mobile_sub_title
-      margin-left: 45%
+      margin-left: 55%
 
 
   section#customers
     height: 800px
+    padding-top: 20px
 
     .t,.st
-      margin-left: 8%
+      margin-left: 10%
 
     .t
       font-size: $mobile_title
-      width: 133px
+      width: 190px
       line-height: 45px
+      font-size: 32px
 
     .st
       font-size: $mobile_sub_title
 
+    .w_hr
+      right: 120px
+
     .circle1,.circle2
       display: block
       margin: auto
+      margin-top: 50px
 
     .circle2
       margin-top: 30px
+
+    .icon_service
+      height: 100px
+      display: none
+
 
   section#maps
     .t
@@ -676,9 +738,37 @@ section#footer
     .st
       font-size: $mobile_sub_title
 
+    .icon_service
+      height: 80%
+      left: 27%
+      margin-top: 20px
+
   section#download
-    display: hidden
+    display: none
     opacity: 0
+    height: 0px
+
+  section#footer
+    margin-top: 30px
+    h1
+      font-size: 12px
+      padding-left: 15px
+
+    .le1
+      padding-left: 60px
+      margin-top: 60px
+
+    .le2
+      text-align: center
+      padding-left: 0px
+
+    .mt2
+      margin-top: -85px
+
+    .phone
+      margin-left: 250px
+
+
 
 
 

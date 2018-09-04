@@ -37,7 +37,6 @@ body
         .col-lg-4.col-md-12
           .col-md-12
             h1.t 新零售內容管理賦能平台
-          .col-md-12
             p.st 重新定義連鎖門店管理
 
         .col-lg-8.col-md-12
@@ -46,11 +45,15 @@ body
   section#platform
     .container
       .row
-        .col-md-12
-          h1.t SaaS級智能營運管理雲平台
+        .col-md-1
+          hr.b_hr
 
-        .col-md-12.mb-3
-          p.st 滿足門店所有需求
+        .col-md-11
+          .col-md-12
+            h1.t SaaS級智能營運管理雲平台
+
+          .col-md-12.mb-3
+            p.st 滿足門店所有需求
 
       .row
         .col-lg-3.col-md-6
@@ -93,17 +96,23 @@ body
     .container
       .row
         .col-lg-4.col-md-12.col-sm-12
-          h1.t 強大功能
-          p.st 優點與特色功能，如何好操作、擴充性高、支援多裝置等等
-          img.icon_service(src="pic/function.png", alt="")
+          .row
+            .col-md-1
+              hr.b_hr
+            .col-md-11
+              h1.t 強大功能
+              p.st 優點與特色功能，如何好操作、擴充性高、支援多裝置等等
+              img.functions_icon(src="pic/function.png", alt="")
+
+
 
         .col-lg-8.col-md-12.col-sm-12
-          .row.le
+          .row.left_move
 
             .col-md-6
               .row
                 .col-sm-4
-                  img.icon_service1(src="pic/f1.png", alt="")
+                  img.function_intro(src="pic/f1.png", alt="")
 
                 .col-sm-8
                   h2 所見即所得
@@ -111,7 +120,7 @@ body
 
               .row.mt
                 .col-sm-4
-                  img.icon_service1(src="pic/f3.png", alt="")
+                  img.function_intro(src="pic/f3.png", alt="")
 
                 .col-sm-8
                   h2 門店播放
@@ -119,7 +128,7 @@ body
 
               .row.mt
                 .col-sm-4
-                  img.icon_service1(src="pic/f5.png", alt="")
+                  img.function_intro(src="pic/f5.png", alt="")
 
                 .col-sm-8
                   h2 團隊協作工作
@@ -127,7 +136,7 @@ body
 
               .row.mt
                 .col-sm-4
-                  img.icon_service1(src="pic/f7.png", alt="")
+                  img.function_intro(src="pic/f7.png", alt="")
 
                 .col-sm-8
                   h2 新媒體營銷
@@ -137,7 +146,7 @@ body
             .col-md-6
               .row
                 .col-sm-4
-                  img.icon_service1(src="pic/f2.png", alt="")
+                  img.function_intro(src="pic/f2.png", alt="")
 
                 .col-sm-8
                   h2 排程清單
@@ -145,7 +154,7 @@ body
 
               .row.mt
                 .col-sm-4
-                  img.icon_service1(src="pic/f4.png", alt="")
+                  img.function_intro(src="pic/f4.png", alt="")
 
                 .col-sm-8
                   h2 歌單雲儲存
@@ -154,7 +163,7 @@ body
 
               .row.mt
                 .col-sm-4
-                  img.icon_service1(src="pic/f6.png", alt="")
+                  img.function_intro(src="pic/f6.png", alt="")
 
                 .col-sm-8
                   h2 隨時隨地
@@ -162,7 +171,7 @@ body
 
               .row.mt
                 .col-sm-4
-                  img.icon_service1(src="pic/f8.png", alt="")
+                  img.function_intro(src="pic/f8.png", alt="")
 
                 .col-sm-8
                   h2 使用簡單
@@ -182,11 +191,13 @@ body
     .container
       .row
         .col-sm-4
-          .col-sm-12
-          h1.t 他們都在用Kabob CMS
+          .row
+            .col-md-1
+              hr.w_hr
 
-          .col-sm-12
-          p.st 優秀、源於品質
+            .col-md-11
+                h1.t 他們都在用Kabob CMS
+                p.st 優秀、源於品質
 
         .col-sm-8
           .row
@@ -204,24 +215,19 @@ body
                 p.intro1 150
                 p.intro2 家客戶
 
-      .row
-        .col-sm-2
-          img.icon_service(src="pic/c1.png", alt="")
+      .row.aaa
+        .col-lg-12
+          img.icon_service.l1(src="pic/c1.png", alt="")
 
-        .col-sm-2
           img.icon_service(src="pic/c2.png", alt="")
 
-        .col-sm-2
           img.icon_service(src="pic/c3.png", alt="")
 
-        .col-sm-2
           img.icon_service(src="pic/c4.png", alt="")
 
-        .col-sm-2
           img.icon_service(src="pic/c5.png", alt="")
 
-        .col-sm-2
-          img.icon_service(src="pic/c6.png", alt="")
+          img.icon_service.l2(src="pic/c6.png", alt="")
 
 
   section#maps
@@ -236,13 +242,7 @@ body
         .col-md-12.img_height
           img.icon_service(src="pic/worldmap_draw.png", alt="")
 
-        // .btn.china China
-
-        // .btn.singapore Singapore
-
-        // .btn.japan Japan
-
-        // .btn.taiwan Taiwan
+        .col-md-12
 
 
   section#download
@@ -276,7 +276,22 @@ body
             h2 Android
 
   section#footer
-    .container
+      .row
+        .col-sm-12.mt1
+          img.logo(src="pic/logo1.png", alt="")
+
+        .col-sm-12.mt4
+          h1.le1 聯絡我們
+          h1 使用手冊
+          h1 隱私政策
+          h1 服務條款
+
+        .col-sm-12.mt2
+          img.phone(src="pic/call_btn.png", alt="")
+          img.mail(src="pic/mail_btn.png", alt="")
+
+        .col-sm-12.mt3
+          h2.le2 2017 Copyright of Kabob Creative Co. Limited
 
 
   script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
