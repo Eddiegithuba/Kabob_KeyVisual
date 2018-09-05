@@ -11,8 +11,7 @@ head
 
 
 body
-  header#header_index
-    .container
+  .nav_container
       a.site-logo(href='#') Logo
       nav#nav-main.okayNav(role='navigation')
         ul
@@ -30,14 +29,14 @@ body
             a(href='#') About us
           li
             a(href='#') Testimonials
-
+  header#header_index
+    .container
       .row
         .col-lg-4.col-md-12
-          .col-md-12
-            h1.t 新零售內容管理賦能平台
-            p.st 重新定義連鎖門店管理
+          h1.t 新零售內容管理賦能平台
+          p.st 重新定義連鎖門店管理
 
-        .col-lg-8.col-md-12
+        .col-lg-8.col-md-12.header_icon_container
           img.header_icon(src="pic/header.png", alt="")
 
   section#platform
