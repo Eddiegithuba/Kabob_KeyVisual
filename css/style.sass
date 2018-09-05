@@ -27,7 +27,7 @@ $mobile_sub_title: 16px
 @mixin st_b //黑色副標
   color: #3B3E49
   font-size: $desktop_sub_title
-  font-weight: 600
+  font-weight: 300
   line-height: 25px
   margin-left: -30px
 
@@ -40,7 +40,7 @@ $mobile_sub_title: 16px
 @mixin st_w //白色副標
   color: #FFFFFF
   font-size: $desktop_sub_title
-  font-weight: 600
+  font-weight: 300
   line-height: 25px
 
 @mixin p_p //platform的產品名稱
@@ -57,7 +57,7 @@ $mobile_sub_title: 16px
 
 @mixin p_st //platform產品的簡稱
   font-size: 18px
-  font-weight: 600
+  font-weight: 300
   line-height: 25px
   text-align: center
 
@@ -89,158 +89,156 @@ section
 h1,h2,h3,h4,h5,h6,p
   margin: 0px
 
-
-//.........................
-nav
-  align-items: center
-  display: -webkit-flex
-  display: -ms-flexbox
-  display: flex
-  -webkit-flex-direction: row
-  -ms-flex-direction: row
-  flex-direction: row
-  height: 7rem
-  padding: 0 15px
-  position: fixed
-  -webkit-justify-content: space-between
-  -ms-flex-pack: justify
-  justify-content: space-between
-  top: 0
-  width: 100%
-  z-index: 500
-
-.site-logo
-  transition: color 200ms cubic-bezier(0.55, 0, 0.1, 1)
-  color: #30acff
-  font-size: 3rem
-
-.ok-header__logo:hover
-  color: #546edb
-
-.okayNav:not(.loaded)
-  visibility: hidden
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-
-.okayNav ul
-  //We want two navigations - one hidden and one visible
-  float: left
-
-.okayNav a
-  //Links general styling
-  color: #2e2e33
-  font-size: 1.4rem
-  font-weight: bold
-  position: relative
-  z-index: 1
-
-.okayNav__nav--visible
-  overflow: hidden
-  white-space: nowrap
-
-.okayNav__nav--visible li
-  display: inline-block
-
-.okayNav__nav--visible a
-  //Link styling for the visible part of the nav
-  display: block
-  transition: color 200ms cubic-bezier(0.55, 0, 0.1, 1)
-  padding: 15px 15px
-
-.okayNav__nav--visible a:hover
-  color: #546edb
-
-  //Link styling for the off-screen part of the nav
-.okayNav__nav--invisible
-  position: fixed
-  top: 70px
-  bottom: 0
-  overflow-y: scroll
-  -webkit-overflow-scrolling: touch
-  background: #fff
-
-.okayNav__nav--invisible a
-  background: #fff
-  width: 240px
-  display: block
-  padding: 15px
-
-.okayNav__nav--invisible.nav-left
-  left: 0
-  -webkit-transform: translateX(-100%)
-  transform: translateX(-100%)
-
-.okayNav__nav--invisible.nav-right
-  right: 0
-  -webkit-transform: translateX(100%)
-  transform: translateX(100%)
-
-.okayNav__nav--invisible.transition-enabled
-  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
-
-.okayNav__nav--invisible.nav-open
-  -webkit-transform: translateX(0)
-  transform: translateX(0)
-
-.okayNav__menu-toggle
-  position: relative
-  transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
-  transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
-  cursor: pointer
-  width: 40px
-  height: 20px
-  float: left
-  z-index: 1
-  top: 15px
-
-.okayNav__menu-toggle.okay-invisible
-  position: absolute
-  opacity: 0
-  -webkit-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-  pointer-events: none
-
-.okayNav__menu-toggle span
-  display: block
-  position: absolute
-  margin: auto
-  height: 4px
-  width: 4px
-  background: #2e2e33
-  border-radius: 50%
-  left: 0
-  right: 0
-  pointer-events: none
-
-.okayNav__menu-toggle span:nth-child(1)
-  top: 0
-
-.okayNav__menu-toggle span:nth-child(2)
-  top: 50%
-  -webkit-transform: translateY(-50%)
-  transform: translateY(-50%)
-
-.okayNav__menu-toggle span:nth-child(3)
-  bottom: 0
-
-.okayNav__menu-toggle.icon--active
-  -webkit-transform: rotate(90deg)
-  transform: rotate(90deg)
-
-.okayNav__menu-toggle.icon--active span
-  background: #546edb
-
 // .........................
 header
   background-image: linear-gradient(#21232A, #3B3E49)
   padding-bottom: 140px
+
+  nav
+    align-items: center
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    -webkit-flex-direction: row
+    -ms-flex-direction: row
+    flex-direction: row
+    height: 7rem
+    padding: 0 15px
+    position: fixed
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    top: 0
+    width: 100%
+    z-index: 500
+
+  .site-logo
+    transition: color 200ms cubic-bezier(0.55, 0, 0.1, 1)
+    color: red
+    font-size: 3rem
+
+  .ok-header__logo:hover
+    color: #546edb
+
+  .okayNav:not(.loaded)
+    visibility: hidden
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+  .okayNav ul
+    //We want two navigations - one hidden and one visible
+    float: left
+
+  .okayNav a
+    //Links general styling
+    color: white
+    font-size: 1.4rem
+    font-weight: bold
+    position: relative
+    z-index: 1
+
+  .okayNav__nav--visible
+    overflow: hidden
+    white-space: nowrap
+
+  .okayNav__nav--visible li
+    display: inline-block
+
+  .okayNav__nav--visible a
+    //Link styling for the visible part of the nav
+    display: block
+    transition: color 200ms cubic-bezier(0.55, 0, 0.1, 1)
+    padding: 15px 15px
+
+  .okayNav__nav--visible a:hover
+    color: #546edb
+
+    //Link styling for the off-screen part of the nav
+  .okayNav__nav--invisible
+    position: fixed
+    top: 70px
+    bottom: 0
+    overflow-y: scroll
+    -webkit-overflow-scrolling: touch
+    background: #fff
+
+  .okayNav__nav--invisible a
+    background: #fff
+    width: 240px
+    display: block
+    padding: 15px
+
+  .okayNav__nav--invisible.nav-left
+    left: 0
+    -webkit-transform: translateX(-100%)
+    transform: translateX(-100%)
+
+  .okayNav__nav--invisible.nav-right
+    right: 0
+    -webkit-transform: translateX(100%)
+    transform: translateX(100%)
+
+  .okayNav__nav--invisible.transition-enabled
+    transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
+    transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
+    transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
+
+  .okayNav__nav--invisible.nav-open
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+
+  .okayNav__menu-toggle
+    position: relative
+    transition: -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
+    transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
+    transition: transform 400ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 400ms cubic-bezier(0.55, 0, 0.1, 1)
+    cursor: pointer
+    width: 40px
+    height: 20px
+    float: left
+    z-index: 1
+    top: 15px
+
+  .okayNav__menu-toggle.okay-invisible
+    position: absolute
+    opacity: 0
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    pointer-events: none
+
+  .okayNav__menu-toggle span
+    display: block
+    position: absolute
+    margin: auto
+    height: 4px
+    width: 4px
+    background: #2e2e33
+    border-radius: 50%
+    left: 0
+    right: 0
+    pointer-events: none
+
+  .okayNav__menu-toggle span:nth-child(1)
+    top: 0
+
+  .okayNav__menu-toggle span:nth-child(2)
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+
+  .okayNav__menu-toggle span:nth-child(3)
+    bottom: 0
+
+  .okayNav__menu-toggle.icon--active
+    -webkit-transform: rotate(90deg)
+    transform: rotate(90deg)
+
+  .okayNav__menu-toggle.icon--active span
+    background: #546edb
 
   .t
     font-size: 72px
@@ -617,7 +615,7 @@ section#footer
 @media (max-width: 576px)
 
   header#header_index
-    height: 600px
+    padding-bottom: 80px
 
     .header_icon
       margin-left: 20%
